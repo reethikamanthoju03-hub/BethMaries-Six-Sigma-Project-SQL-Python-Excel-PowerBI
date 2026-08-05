@@ -8,7 +8,7 @@ A capstone project applying the Six Sigma DMAIC methodology to reduce customer w
 | [`data/Beth_Maries.xlsx`](data/Beth_Maries.xlsx) | Raw observation dataset — 51 customer service-time records (decision, scoop, checkout time by item type) |
 | [`data/bethmaries_survey.xlsx`](data/bethmaries_survey.xlsx) | Customer perception survey responses (wait-time perception, flavor familiarity) |
 | [`data/Beth_Maries_Simulation.xlsx`](data/Beth_Maries_Simulation.xlsx) | Excel-based Monte Carlo simulation — 5,000 synthetic customer records generated from the original 42 using `LOGNORM.INV()` and `RAND()` |
-| [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql) | KPI, outlier-detection, and capacity queries — CTEs, window functions, z-scores |
+| [`data/Beth_Maries_sql.sql`](data/Beth_Maries_sql.sql) | KPI, outlier-detection, and capacity queries — CTEs, window functions, z-scores |
 | [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx) | Excel dashboard — live formulas + charts |
 | [`powerbi/BethMaries_Dashboard.pbix`](powerbi/BethMaries_Dashboard.pbix) | Power BI dashboard |
 | [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf) | Full DMAIC report — Define, Measure, Analyze & Improve phases, SIPOC, control plan |
@@ -18,7 +18,7 @@ A capstone project applying the Six Sigma DMAIC methodology to reduce customer w
 ## 📊 Live Dashboard & Analysis Links
 **Excel Dashboard:** [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx)
 **Power BI Dashboard:** [`powerbi/BethMaries_Dashboard.pbix`](powerbi/BethMaries_Dashboard.pbix)
-**SQL Analysis:** [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql)
+**SQL Analysis:** [`data/Beth_Maries_sql.sql`](data/Beth_Maries_sql.sql)
 **Full DMAIC Report:** [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf)
 
 ## Project Overview
@@ -89,8 +89,8 @@ Microsoft Excel (`LOGNORM.INV()` / `RAND()` based Monte Carlo simulation, live-f
 
 ## Getting Started
 ```
-git clone https://github.com/reethikamanthoju03-hub/BethMaries-Six-Sigma-Project-SQL-Python-Excel-PowerBI.git
-cd BethMaries-Six-Sigma-Project-SQL-Python-Excel-PowerBI
+git clone https://github.com/reethikamanthoju03-hub/BethMaries-Six-Sigma-Project-SQL-Excel-PowerBI.git
+cd BethMaries-Six-Sigma-Project-SQL-Excel-PowerBI
 ```
 - Open [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx) to explore the live KPI dashboard, service-time-by-item breakdown, and peak-capacity model
 - Run the queries in [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql) against the "Simulated Data (5000)" sheet loaded into MySQL/SQL Server/Postgres
