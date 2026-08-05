@@ -8,7 +8,7 @@ A capstone project applying the Six Sigma DMAIC methodology to reduce customer w
 | [`data/Beth_Maries.xlsx`](data/Beth_Maries.xlsx) | Raw observation dataset — 51 customer service-time records (decision, scoop, checkout time by item type) |
 | [`data/bethmaries_survey.xlsx`](data/bethmaries_survey.xlsx) | Customer perception survey responses (wait-time perception, flavor familiarity) |
 | [`data/Beth_Maries_Simulation.xlsx`](data/Beth_Maries_Simulation.xlsx) | Excel-based Monte Carlo simulation — 5,000 synthetic customer records generated from the original 42 using `LOGNORM.INV()` and `RAND()` |
-| [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql.html) | KPI, outlier-detection, and capacity queries — CTEs, window functions, z-scores |
+| [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql) | KPI, outlier-detection, and capacity queries — CTEs, window functions, z-scores |
 | [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx) | Excel dashboard — live formulas + charts |
 | [`powerbi/BethMaries_Dashboard.pbix`](powerbi/BethMaries_Dashboard.pbix) | Power BI dashboard |
 | [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf) | Full DMAIC report — Define, Measure, Analyze & Improve phases, SIPOC, control plan |
@@ -18,7 +18,7 @@ A capstone project applying the Six Sigma DMAIC methodology to reduce customer w
 ## 📊 Live Dashboard & Analysis Links
 **Excel Dashboard:** [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx)
 **Power BI Dashboard:** [`powerbi/BethMaries_Dashboard.pbix`](powerbi/BethMaries_Dashboard.pbix)
-**SQL Analysis:** [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql)
+**SQL Analysis:** [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql)
 **Full DMAIC Report:** [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf)
 
 ## Project Overview
@@ -30,7 +30,7 @@ This project simulates the role of a Six Sigma process improvement team supporti
 Beth Marie's experiences long customer queues at its Square location, particularly during two predictable daily rush windows. The store runs two structurally different order-fulfillment processes depending on volume a single-staff model during slow periods and a split-role model (maker + cashier) during busy periods with no standardized handoff between them. The busy-period process relies on a handwritten weight slip, which introduces legibility errors, incorrect charges, and checkout delays. This project applies a DMAIC framework and waiting-line (queuing) analysis to identify the primary bottleneck in the service process and recommend improvements to reduce wait time and improve accuracy.
 
 ## Analysis
-Metrics calculated and evaluated (see `data/Beth_Maries_sql`, `data/BethMaries_Six_Sigma_Dashboard.xlsx`, and the two PDF reports):
+Metrics calculated and evaluated (see `data/Beth_Maries_sql.sql`, `data/BethMaries_Six_Sigma_Dashboard.xlsx`, and the two PDF reports):
 - Service time broken into **Decision Time**, **Scoop Time**, and **Checkout Time**
 - Descriptive statistics (mean, median, standard deviation, min/max) per service stage
 - Service time distribution by **Item Type** (Cone, Cup, Shake, Split, Sundae)
@@ -93,7 +93,7 @@ git clone https://github.com/reethikamanthoju03-hub/BethMaries-Six-Sigma-Project
 cd BethMaries-Six-Sigma-Project-SQL-Python-Excel-PowerBI
 ```
 - Open [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx) to explore the live KPI dashboard, service-time-by-item breakdown, and peak-capacity model
-- Run the queries in [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql) against the "Simulated Data (5000)" sheet loaded into MySQL/SQL Server/Postgres
+- Run the queries in [`data/Beth_Maries_sql.sql.html`](data/Beth_Maries_sql.sql) against the "Simulated Data (5000)" sheet loaded into MySQL/SQL Server/Postgres
 - Open [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf) for the full DMAIC write-up (Define, Measure, Analyze, Improve, Control)
 - Open [`data/Beth_Maries_Simulation.xlsx`](data/Beth_Maries_Simulation.xlsx) to explore the raw 42-record dataset, the 5,000-record simulation, and side-by-side summary statistics
 - Review [`data/BethMaries_Simulation_Report_docx.pdf`](data/BethMaries_Simulation_Report_docx.pdf) for the Excel-based Monte Carlo simulation methodology and validation
