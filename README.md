@@ -9,7 +9,6 @@ A capstone project applying the Six Sigma DMAIC methodology to reduce customer w
 | [`data/bethmaries_survey.xlsx`](data/bethmaries_survey.xlsx) | Customer perception survey responses (wait-time perception, flavor familiarity) |
 | [`data/Beth_Maries_Simulation.xlsx`](data/Beth_Maries_Simulation.xlsx) | Excel-based Monte Carlo simulation — 5,000 synthetic customer records generated from the original 42 using `LOGNORM.INV()` and `RAND()` |
 | [`data/Beth_Maries_sql.sql`](data/Beth_Maries_sql.sql) | KPI, outlier-detection, and capacity queries — CTEs, window functions, z-scores |
-| [`data/BethMaries_Six_Sigma_Dashboard.xlsx`](data/BethMaries_Six_Sigma_Dashboard.xlsx) | Excel dashboard — live formulas + charts |
 | [`powerbi/BethMaries_Dashboard.pbix`](powerbi/BethMaries_Dashboard.pbix) | Power BI dashboard |
 | [`data/Final_Report_4700_Beth_Maries.pdf`](data/Final_Report_4700_Beth_Maries.pdf) | Full DMAIC report — Define, Measure, Analyze & Improve phases, SIPOC, control plan |
 | [`data/BethMaries_Simulation_Report_docx.pdf`](data/BethMaries_Simulation_Report_docx.pdf) | Excel-based Monte Carlo simulation methodology & validation report |
